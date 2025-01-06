@@ -11,43 +11,44 @@
 
         /* Section 1 */   
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe"; // Je crée un variable nommé name qui prend pour valeur le string Joe.
+        var city = 'London'; // Je crée un variable nommé city dont la valeur est le string London.
+        var age = 32; // Je crée un variable nommé age dont la valeur est l'entier 32.
+        var isRed = true; // Je crée un variable nommé isRed dont la valeur est booléen
+        var isOld = age > 80; // Je crée un variable nommé isOld dont la valeur est booléen.
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; // Je crée un variable qui contient un tableau.
 
+        // Je crée une fonction called info() qui contient 2 paramètres et les déclarations si et sinon.
         function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
+            if (height > 180) { // Lorsque la hauteur est supérieur à 180, cette déclaration si sera exécutée.
+                console.log('Vous êtes grand'); // output : Vous êtes grand
             }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
-                console.log('Good !')
+            if (weight < 0) { // Lorsque la largeur est inférieur à 0, cette déclaration si sera exécutée.
+                console.log('oups, there is a problem'); // output : oups, there is a problem
+            } else if ( weight < 15) { // Lorsque la largeur est inférieur à 15, cette déclaration sera exécutée.
+                console.log('Are you that slim ?') // output : Are you that slim ?
+            } else { // Lorsque aucune déclaration si et sinon sera évalué comme true, cette déclaration sinon sera exécutée.
+                console.log('Good !') // output : Good !
             }
         }
 
-        info(165, 45);
+        info(165, 45); // Je fais passé les paralètres à la fonction info() avec les chiffres en dur.
 
-        var myHeight = 175;
-        var myWeight = 86;
+        var myHeight = 175; //Je crée un variable myHeight et l'assigne une valeur l'entier 175.
+        var myWeight = 86; //Je crée un variable myWeight et l'assigne une valeur l'entier 86.
 
-        info(myHeight, myWeight);
+        info(myHeight, myWeight); // Je fais passé les paramètres à la fonction info() avec les variables déclarés.
 
-        info(myHeight + 15, myWeight - 100);
+        info(myHeight + 15, myWeight - 100); // J'utilise les opérateurs pour modifier les valeurs des variables et fais passé à nouveau ces variables comme paramètres à la fonction info().
 
-        function toUpper(variable) {
+        function toUpper(variable) { // Je crée une fonction toUpper() afin de tranformer les variables en majuscule.
             return variable.toUpperCase();
         }
 
         var upperName = toUpper(name);
 
-        for (i = 0; i < 3; i = i + 1) {
+        for (i = 0; i < 3; i = i + 1) { // Je crée un boucle for.
             console.log(previousJobs[i]);
         }
 
@@ -55,7 +56,10 @@
 
         // afficher la ville dans laquele Joe vit.     
 
+          //console.log(city);
+
         // afficher si Joe est roux ou pas.
+          //console.log(isRed);
 
         /* Section 3 */
 
