@@ -1,6 +1,8 @@
 // you can write js here
 
-        var kelvins = 294;
+       // var kelvins = 294;
+        const prompt=require("prompt-sync")({sigint:true});
+        var kelvins = prompt("Quelle est la température en Kelvins aujourd'hui ?");
         console.log(kelvins);
 
         var celsius = kelvins - 273; // Je convertis la température kelvins en celsius et crée un variable celsius pour stocker le résultat. La température en Celsius est inférieure de 273 degrés à celle en Kelvins.
