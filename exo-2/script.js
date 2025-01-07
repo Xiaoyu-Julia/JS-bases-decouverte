@@ -1,5 +1,7 @@
 // you can write js here
+const isTesting = true;
 const myDate = new Date();
+
 let msgWeek = "pas encore le weekend";
 switch (msgWeek) {
     case 'lundi' : 
@@ -16,5 +18,11 @@ switch (msgWeek) {
        break;
 }
 let msgWeekend = "c'est le weekend";
-let today = myDate.getDay();
-console.log(today);
+let currentDay = myDate.getDay();
+if(currentDay===0 || currentDay === 6) {
+   console.log(msgWeekend);
+} else{
+   console.log(msgWeek);
+}
+
+
