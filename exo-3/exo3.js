@@ -12,9 +12,10 @@ function getPlayerChoice(playInput){
 }
 
 function getComputerChoice(){
+    number = Math.floor(Math.random(0,2));
     const arr = ['rock', 'paper', 'scissors'];
-    for(i=0; i<arr.length; i++){
-        return Math.random(arr[i]);
+    for(i=number; i<arr.length; i++){   
+        return arr[i];
     } 
 }
 
