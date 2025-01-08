@@ -40,7 +40,7 @@ function findWinner(playerChoice, computerChoice){
     if(playerChoice === computerChoice){
         return 'Tied';
     }
-    if(playerChoice === 'rock' && computerChoice === 'scissors' ||
+    else if(playerChoice === 'rock' && computerChoice === 'scissors' ||
         playerChoice === 'paper' && computerChoice === 'rock' ||
         playerChoice === 'scissors' && computerChoice === 'paper'
     ){
